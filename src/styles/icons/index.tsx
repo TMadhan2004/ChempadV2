@@ -21,6 +21,7 @@ import { ReactComponent as ExportIcon } from "./export.svg";
 import { ReactComponent as ImportIcon } from "./import.svg";
 import { ReactComponent as PasteIcon } from "./paste.svg";
 import { ReactComponent as PeriodicTable } from "./periodic_table.svg";
+import { ReactComponent as RectangleIcon } from "./rectangle.svg";
 import { ReactComponent as RedoIcon } from "./redo.svg";
 import { ReactComponent as SelectBoxIcon } from "./select_box.svg";
 import { ReactComponent as SelectLassoIcon } from "./select_lasso.svg";
@@ -41,6 +42,7 @@ IconsMap.set(ToolsConstants.ToolsNames.Export, ExportIcon);
 IconsMap.set(ToolsConstants.ToolsNames.Import, ImportIcon);
 IconsMap.set(ToolsConstants.ToolsNames.Paste, PasteIcon);
 IconsMap.set(ToolsConstants.ToolsNames.PeriodicTable, PeriodicTable);
+IconsMap.set(ToolsConstants.ToolsNames.Rectangle, RectangleIcon);
 IconsMap.set(ToolsConstants.ToolsNames.SelectBox, SelectBoxIcon);
 IconsMap.set(ToolsConstants.ToolsNames.SelectLasso, SelectLassoIcon);
 
