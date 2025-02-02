@@ -13,6 +13,14 @@ class RectangleTool extends BoxSelect {
     strokeColor: string = "#000000";
     strokeWidth: number = 2;
 
+    clear() {
+        if (this.rect) {
+            this.rect.remove();
+            this.rect = undefined;
+        }
+        this.selectionMode = -1;
+    }
+
     onActivate(attrs?: LaunchAttrs) {
         if (!attrs) return;
         const { editor } = attrs;
@@ -65,7 +73,21 @@ class RectangleTool extends BoxSelect {
             this.selectionMode = -1;
         }
     }
+
+    override removeShape(): void {
+        if (this.rect) {
+            this.rect.remove();
+            this.rect = undefined;
+        }
+    }
+
+    override onDeactivate() {
+        this.removeShape();
+        this.selectionMode = -1;
+    }
 }
+
+export { RectangleTool };
 
 const rectangleTool = new RectangleTool();
 RegisterToolbarWithName(ToolsConstants.ToolsNames.Rectangle, rectangleTool);
