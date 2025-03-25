@@ -13,7 +13,7 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
     currentDebugTools = [];
 }
 
-const toolbarItemsList: ToolbarItemButton[] = [
+/* const toolbarItemsList: ToolbarItemButton[] = [
     Erase,
     BondTool.singleBond,
     BondTool.doubleBond,
@@ -23,7 +23,18 @@ const toolbarItemsList: ToolbarItemButton[] = [
     BondTool.wedgeFrontBond,
     Chain,
     ...currentDebugTools,
-]; 
+];  */
+
+const toolbarItemsList: ToolbarItemButton[] = [
+    Erase,
+    BondTool.singleBond,
+    BondTool.doubleBond,
+    BondTool.tripleBond,
+    BondTool.singleOrDoubleBond,
+    BondTool.wedgeBackBond,
+    BondTool.wedgeFrontBond,
+    Chain,
+];
 
 const props: IToolbarItemsProps = {
     toolbarItemsList,

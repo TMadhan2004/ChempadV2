@@ -6,6 +6,7 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 
 import App from "./App";
+// import TestApp from "./TestApp"; // Use TestApp temporarily
 import { store } from "./app/store";
 import * as serviceWorker from "./serviceWorker";
 

@@ -7,8 +7,8 @@ const preloadedState = {};
 export const store = configureStore({
     reducer: RootReducer,
     // !!! enable this?
-    // devTools: process.env.NODE_ENV !== 'production',
-    devTools: true,
+    // devTools: import.meta.env.PROD !== true,
+    devTools: import.meta.env.PROD !== true,
     preloadedState,
     // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(),
     // middleware: (getDefaultMiddleware) =>

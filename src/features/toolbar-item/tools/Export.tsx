@@ -47,7 +47,7 @@ function ExportFile(props: DialogProps & { title: string }) {
             const url = window.URL.createObjectURL(blob);
             const link = document.createElement("a");
             link.href = url;
-            link.download = `sketChem_mol.${format}`;
+            link.download = `ChemPad.${format}`;
             link.click();
             window.URL.revokeObjectURL(url);
         } else {
